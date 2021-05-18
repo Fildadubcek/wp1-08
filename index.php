@@ -22,8 +22,11 @@ if(isset($_POST['games'])) {
  <?php
  if(isset($submit)){
      echo "formulář byl odeslán";
-     var_dump($games);
- }  else  {?>
+     //var_dump($games);
+
+     foreach ($games as $game) {
+         echo $game. "<br>";
+ } }  else  {?>
  
  
 
